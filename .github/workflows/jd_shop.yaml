@@ -33,6 +33,7 @@ jobs:
                   npm install
             - name: "运行 【京东进店领豆】"
               run: |
+                  node jd_scripts/jd_shop.js
                   node onlyOneExecute.js
               env:
                   JD_COOKIE: ${{ github.event.client_payload.JD_COOKIE || secrets.JD_COOKIE }}

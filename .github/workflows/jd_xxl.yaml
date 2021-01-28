@@ -33,7 +33,8 @@ jobs:
                   npm install
             - name: "运行【东东爱消除】"
               run: |
-                  node onlyOneExecute.js
+                  node jd_scripts/jd_xxl.js
+                  #node onlyOneExecute.js
               env:
                   
                   JD_COOKIE: ${{ github.event.client_payload.JD_COOKIE || secrets.JD_COOKIE }}
