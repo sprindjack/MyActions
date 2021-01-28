@@ -19,6 +19,12 @@ jobs:
         steps:
             - name: 拉取代码
               uses: actions/checkout@v2
+            - uses: actions/checkout@v2
+              with:
+                fetch-depth: 0
+                repository: sprindjack/jd_scripts
+                token: ${{ secrets.PAT }}
+                path: jd_scripts
             - name: 设置运行环境-Node.js 10.x
               uses: actions/setup-node@v1
               with:
