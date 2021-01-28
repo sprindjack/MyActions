@@ -33,7 +33,7 @@ jobs:
                   npm install
             - name: "运行 【京豆变动通知】"
               run: |
-                  node jd_scripts/jd_bean_home.js
+                  node jd_scripts/jd_fruit.js
                   #node onlyOneExecute.js
 
               env:
