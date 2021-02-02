@@ -31,7 +31,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-                  npm install request --save
+                  npm install -g request
             - name: "运行 【京豆签到】"
               run: |
                   node jd_scripts/jd_bean_sign.js
