@@ -12,7 +12,7 @@ on:
         default: 6
      
   schedule:
-    - cron: '10 */1 * * *'
+      - cron: '10 */1 * * *'
 
 jobs:
   del_runs:
