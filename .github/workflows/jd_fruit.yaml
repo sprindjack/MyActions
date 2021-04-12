@@ -33,7 +33,7 @@ jobs:
                   npm install
             - name: "运行 【京东农场】"
               run: |
-                  node jd_scripts/temp1/jd_fruit.js
+                  node jd_scripts/jd_fruit.js
                   #node onlyOneExecute.js
               env:
                   JD_COOKIE: ${{ github.event.client_payload.JD_COOKIE || secrets.JD_COOKIE }}
